@@ -64,10 +64,15 @@ if ( $_SESSION['login'] != 1 )
 
 <!-- <link rel="stylesheet" type="text/css" href="../src/css/rowReorder.bootstrap.min.css" /> -->
 <!-- <link rel="stylesheet" type="text/css" href="../src/css/keyTable.bootstrap.min.css" /> -->
-<link rel="stylesheet" type="text/css" href="../src/css/select.bootstrap.min.css" />
 <!-- <script src="../src/js/dataTables.rowReorder.min.js"></script> -->
 <!-- <script src="../src/js/dataTables.keyTable.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="../src/css/select.bootstrap.min.css" />
 <script src="../src/js/dataTables.select.min.js"></script>
+
+<!-- <script type="text/javascript" src="../src/js/pdfmake.min.js"></script> -->
+<!-- <script type="text/javascript" src="../src/js/vfs_fonts.js"></script> -->
+
+
 <script src="../src/js/rainbow.js"></script>
 
 <script>

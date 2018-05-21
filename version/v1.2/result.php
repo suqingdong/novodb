@@ -53,6 +53,10 @@
   ?>
 
 <script>
+
+  var d = new Date();
+  var title = 'result.' + d.getFullYear() + '_' + d.getMonth() + '_' + d.getDate();
+
   $('#result_table').DataTable({
   scrollY: "400px",
   // scrollY: false,
@@ -60,12 +64,43 @@
   scrollCollapse: true, 
   lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']], 
   dom: '<"top"Bf>rt<"bottom"ip><"clear">',
+  // buttons: [
+  //   {
+  //     'extend': 'pageLength',
+  //     'text': '显示行数'
+  //   },
+  //   {
+  //     'extend': 'collection',
+  //     'text': '导出结果',
+  //     'buttons': [
+  //       'copy',
+  //       // 'print',
+  //       {
+  //         'extend': 'excel',
+  //         'title': title
+  //       },
+  //       {
+  //         'extend': 'csv',
+  //         'title': title
+  //       }
+  //       // {
+  //       //   'extend': 'pdf',
+  //       //   'title': title
+  //       // }
+  //     ]
+  //   }
+  // ],
   buttons: [
-    'pageLength', 
-    'copy', 
-    'print',
-    'csv',
-    'excelHtml5',
+    'pageLength',
+    'copy',
+      {
+        'extend': 'excel',
+        'title': title
+      },
+      {
+        'extend': 'csv',
+        'title': title
+      }
   ],
 
   fixedColumns: {

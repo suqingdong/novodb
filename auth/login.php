@@ -2,7 +2,7 @@
 session_start();
 ?>
 
-
+<title>Login | Novo-Zhonghua</title>
 <link href="../src/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/signin.css" rel="stylesheet">
 <style>
@@ -20,7 +20,7 @@ session_start();
 		<button class="btn btn-lg btn-warning btn-block" type="submit">登录</button>
 		<div style="margin-top: 10px;">
 			<input name="remember-me" type="checkbox"> 记住我
-			<a id="term"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"> 请先阅读使用规则</a>
+			<a id="term"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"> 请先阅读使用说明</a>
 		</div>
 	</form>
 	<div id="msg" class="text-center" ></div>
@@ -30,10 +30,11 @@ session_start();
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
 		<div class="modal-header">
-			<h4 class="modal-title text-center">使用规则</h4>
+			<h4 class="modal-title text-center">声明</h4>
 		</div>
 		<div class="modal-body">
-			bla bla ...
+			<p>本网站为NovoZhonghua数据库的在线查询系统，可以批量查询位置、变异、基因、RS号等。</p>
+			<p>网站需登录后方可查询，如需使用，请联系<a href="mailto:humaninfo@novogene.com"> humaninfo@novogene.com </a>进行申请。</p>
 		</div>
     </div>
   </div>
